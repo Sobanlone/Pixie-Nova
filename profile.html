@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Profile</title>
+    <link rel="stylesheet" href="profile.css" />
+  </head>
+  <body>
+    <header>
+      <h1>User Profile</h1>
+      <a href="Home.html" class="go-back-link">
+        <i class="fas fa-arrow-left"></i> Go back to Home
+      </a>
+    </header>
+    <main>
+      <form id="profile-form">
+        <label for="new-email">Email:</label>
+        <input
+          type="text"
+          id="new-email"
+          placeholder="Enter new email"
+          required
+        />
+        <label for="new-username">Username:</label>
+        <input
+          type="text"
+          id="new-username"
+          placeholder="Enter new username"
+          required
+        />
+        <label for="new-password">Password:</label>
+        <input
+          type="password"
+          id="new-password"
+          placeholder="Enter new password"
+        />
+        <label for="new-icon">Change Icon:</label>
+        <input type="file" id="new-icon" />
+        <img src="" alt="Current Icon" id="current-icon" />
+        <button type="submit">Save Changes</button>
+      </form>
+    </main>
+    <script src="profile.js"></script>
+  </body>
+</html>

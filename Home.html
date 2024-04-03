@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pixie Nova - Roblox Game Idea</title>
+    <link rel="stylesheet" href="Homestyle.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Welcome to Pixie Nova - Go beyond from just imagination</h1>
+      <!-- User Container -->
+      <div id="user-container">
+        <!-- User Icon Container -->
+        <div id="user-icon-container">
+          <img src="user-icon.png" alt="User Icon" id="user-icon" />
+        </div>
+        <!-- User Info Container -->
+        <div id="user-info-container">
+          <span id="username"></span>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="website-description">
+        <h2>About Pixie Nova</h2>
+        <p>
+          Welcome to Pixie Nova, where creativity meets imagination! Pixie Nova
+          is your gateway to bringing your wildest Roblox game ideas to life.
+          Whether you're a seasoned developer or a Common person, Pixie Nova
+          provides the Power to you to Create your own gaming experiences for
+          players around the world and of course including you your self!.
+        </p>
+        <p>
+          share your ideas, collaborate with others, and unleash your
+          creativity. With Pixie Nova, the possibilities are endless. Start
+          building your dream Roblox game today!
+        </p>
+      </section>
+      <section class="team-join">
+        <h2>Join the Team or Share Ideas</h2>
+        <select id="contact-selector">
+          <option value="" disabled selected>Select one</option>
+          <option value="join">Join the Team</option>
+          <option value="share">Share Ideas</option>
+        </select>
+        <div id="search-bar">
+          <input type="text" id="search-input" placeholder="Type here..." />
+          <button onclick="sendEmail()">Send</button>
+        </div>
+      </section>
+      <section class="game-images">
+        <h2>Game Screenshots</h2>
+        <div class="image">
+          <img src="Photos/screenshot1.png" alt="Screenshot 1" />
+          <p class="caption">Exploring the abandoned toy factory!</p>
+        </div>
+        <a href="https://www.roblox.com/games/16794804394/PPT1">
+          Come back employee (Game in development)
+        </a>
+        <div class="image">
+          <img src="Photos/screenshot2.png" alt="Screenshot 2" />
+          <p class="caption">Becoming the strongest swordsman?</p>
+        </div>
+        <a
+          href="https://www.roblox.com/games/15699864611/Moonlight-Onslaught-Butterfly-mansion"
+        >
+          Gotta get back with the coal
+        </a>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2024 Pixie Nova. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+    <script>
+      document
+        .getElementById("contact-selector")
+        .addEventListener("change", function () {
+          var searchBar = document.getElementById("search-bar");
+          if (this.value === "") {
+            searchBar.style.display = "none";
+          } else {
+            searchBar.style.display = "block";
+          }
+        });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,76 @@
+/* Add your custom styles for the profile page here */
+header {
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    text-align: center;
+}
+
+body {
+    background-image: url('Photos/Profile.png');
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    text-align: center;
+}
+
+main {
+    padding: 20px;
+}
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+header h1 {
+    background-color: rgba(12, 12, 12, 0.76); /* Light black background */
+    padding: 10px;
+    color: #fff; /* White text color */
+}
+
+#current-icon {
+    width: 100px; /* Adjust size as needed */
+    height: 100px; /* Adjust size as needed */
+    border: 2px solid #000; /* Black outline */
+    border-radius: 50%; /* Rounded shape */
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    color: #fff; /* Set label text color to white */
+}
+
+/* Additional styles for specific labels */
+label[for="new-email"],
+label[for="new-username"],
+label[for="new-password"] {
+    color: #6e6e6e; /* Set text color to white for email, username, and password labels */
+}
